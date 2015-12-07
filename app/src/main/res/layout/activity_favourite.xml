@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="users.FavouriteActivity">
+<LinearLayout
+    android:id="@+id/favorite_liner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:background="#eeeeee"
+   >
+    <ImageView
+        android:id="@+id/favorite_back"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:onClick="favouriteBack"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"/>
+    <TextView
+        android:text="我的收藏"
+
+        android:layout_weight="16"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/favorite_liner"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_favorite_tip"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击文章右下角红色图标"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="即可找到收藏按钮"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

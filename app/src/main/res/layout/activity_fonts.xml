@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="users.FontsActivity">
+    <LinearLayout
+        android:id="@+id/fonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="#eeeeee"
+        >
+        <ImageView
+            android:id="@+id/fonts_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:onClick="fontsBack"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:text="字体设置"
+
+            android:layout_weight="16"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/fonts_changes"
+        android:layout_below="@id/fonts"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginTop="60dp"
+        android:textSize="17sp"
+        android:text="我已经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，我更加喜欢现在你这经历了沧桑的容颜？
+                                                                                     "/>
+    <TextView
+        android:id="@+id/qingren"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text=" —— 《情人》"
+        android:textSize="15sp"
+        android:layout_below="@id/fonts_changes"
+        android:layout_alignParentRight="true"/>
+    <RelativeLayout
+        android:id="@+id/anniu"
+        android:layout_below="@id/qingren"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/fonts_to_changes"
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/eye_bad"
+                android:button="@null"
+
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eye"/>
+            <RadioButton
+                android:id="@+id/eye_medium"
+                android:button="@null"
+                android:layout_marginLeft="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:background="@drawable/medium"/>
+            <RadioButton
+                android:id="@+id/eye_large"
+                android:button="@null"
+                android:layout_marginLeft="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/large"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/anniu">
+        <TextView
+            android:id="@+id/font_small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="眼神儿好"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/font_medium"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="不大不小"
+            android:textColor="#EC504D"
+            android:gravity="center"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/font_large"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:text="我要大大"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -3,7 +3,7 @@ package org.mobiletrain.myapp.bean;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 15-11-13.
+ * Created by liusihui on 2015/12/8.
  */
 public class PictureDetail implements Serializable{
     private int id;

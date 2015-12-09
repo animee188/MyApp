@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.TimeZone;
 
 /**
- * Created by liusihui on 15-12-4.
+ * Created by liusihui on 2015-12-4.
  */
 public class CurrentTimeUtil {
 

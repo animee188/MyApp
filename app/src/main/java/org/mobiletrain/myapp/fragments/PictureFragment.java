@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 import org.mobiletrain.myapp.interfaces.StringGetData;
-import org.mobiletrain.myapp.parse.ParsePicture;
+import org.mobiletrain.myapp.parse.Parse_Id_info;
 import org.mobiletrain.myapp.utils.CurrentTimeUtil;
 import org.mobiletrain.myapp.utils.HttpUtils;
 
@@ -159,7 +159,7 @@ public class PictureFragment extends Fragment {
             public void getStringData(String s) {
                 // 解析
                 if (s != null) {
-                    listPicure = ParsePicture.parsePictureAll(s);
+                    listPicure = Parse_Id_info.ParsePicture.parsePictureAll(s);
                     // Fragment
                     for (int i = 0; i < listPicure.size(); i++) {
 

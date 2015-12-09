@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                tools:context="fragments.PictureFragment">
+
+    <include
+        android:id="@+id/fragment_picture_topTitle"
+        layout="@layout/top_style"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_picture_pager"
+        android:layout_below="@id/fragment_picture_topTitle"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v4.view.ViewPager>
+
+</RelativeLayout>

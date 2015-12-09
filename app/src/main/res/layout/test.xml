@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/navigationbar_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/get_movices"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:drawableTop="@drawable/movices_main"
+            android:button="@null"
+            android:layout_marginTop="10dp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/get_pictures"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/picturess_main"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/get_texts"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:drawableTop="@drawable/text_main"
+            android:layout_marginTop="10dp"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/get_users"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:drawableTop="@drawable/user_main"
+            android:layout_marginTop="10dp"
+            android:button="@null" />
+    </RadioGroup>
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_above="@id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</RelativeLayout>

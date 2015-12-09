@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/navigationbar_bg"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/play" />
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/play"
+                android:text="播放《乱世情人试看》"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/empty_layout">
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/start_video"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:src="@drawable/play" />
+    </RelativeLayout>
+</RelativeLayout>

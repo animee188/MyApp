@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.MoviesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/top_style"
+        android:id="@+id/movie_title"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/movie_vp"
+        android:layout_below="@id/movie_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

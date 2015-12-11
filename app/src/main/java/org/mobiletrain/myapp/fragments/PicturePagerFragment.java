@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import org.mobiletrain.myapp.R;
 
-import org.mobiletrain.myapp.bean.Picture_detail;
+import org.mobiletrain.myapp.bean.PictureDetail;
 import org.mobiletrain.myapp.interfaces.GetBitmap;
 import org.mobiletrain.myapp.interfaces.StringGetData;
 import org.mobiletrain.myapp.parse.ParsePictureDetail;
@@ -58,7 +58,7 @@ public class PicturePagerFragment extends Fragment {
             public void getStringData(String s) {
                 if (s != null) {
                     // 解析
-                    Picture_detail detail = ParsePictureDetail.parsePictureDetail(s);
+                    PictureDetail detail = ParsePictureDetail.parsePictureDetail(s);
 
                     if (detail != null) {
 

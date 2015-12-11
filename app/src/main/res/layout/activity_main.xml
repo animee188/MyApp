@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="com.joke.qianfeng.joke1526.WelcomeActivity"
-   >
+    >
 
     <RadioGroup
         android:id="@+id/main_rg"
@@ -14,40 +12,45 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="4">
         <RadioButton
             android:id="@+id/get_movices"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:button="@null"
+            android:drawableTop="@drawable/movices_main"
             android:checked="true"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/movices_main"
+            android:textSize="1sp"
             android:layout_height="wrap_content" />
         <RadioButton
-            android:layout_width="wrap_content"
             android:button="@null"
-
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:id="@+id/get_texts"
-            android:layout_marginLeft="50dp"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/picturess_main"
+            android:textSize="1sp"
+            android:drawableTop="@drawable/picturess_main"
+            android:layout_gravity="center_horizontal|center_vertical"
+
             android:layout_height="wrap_content" />
         <RadioButton
             android:id="@+id/get_pictures"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:button="@null"
-            android:layout_marginLeft="50dp"
+            android:textSize="1sp"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/text_main"
+            android:drawableTop="@drawable/text_main"
             android:layout_height="wrap_content" />
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:button="@null"
+            android:textSize="1sp"
             android:id="@+id/get_users"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/user_main"
+            android:drawableTop="@drawable/user_main"
             android:layout_height="wrap_content" />
     </RadioGroup>
 

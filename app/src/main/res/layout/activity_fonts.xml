@@ -28,15 +28,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
+    <ImageView
+        android:layout_below="@+id/fonts"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#333333"/>
     <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:id="@+id/fonts_changes"
         android:layout_below="@id/fonts"
         android:layout_width="wrap_content"
         android:layout_height="140dp"
         android:layout_marginTop="60dp"
         android:textSize="17sp"
-        android:text="我已经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，我更加喜欢现在你这经历了沧桑的容颜？
-                                                                                     "/>
+        android:text="我已经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，我更加喜欢现在你这经历了沧桑的容颜？                                                                                      "/>
     <TextView
         android:id="@+id/qingren"
         android:layout_width="wrap_content"

@@ -7,8 +7,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.mobiletrain.myapp.bean.PictureAll;
-
 /**
  * Created by liusihui on 2015/12／9.
  */

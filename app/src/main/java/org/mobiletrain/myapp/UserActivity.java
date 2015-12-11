@@ -32,8 +32,8 @@ public class UserActivity extends BaseActivity {
         edit = preferences.edit();
         mController = UMServiceFactory.getUMSocialService("com.umeng.login");
         //参数1为当前Activity， 参数2为开发者在QQ互联申请的APP ID，参数3为开发者在QQ互联申请的APP kEY.
-        qqSsoHandler = new UMQQSsoHandler(UserActivity.this, "1104971546",
-                "ttA1QZdVfpeylKDe");
+        qqSsoHandler = new UMQQSsoHandler(UserActivity.this, "1105014910",
+                "WSncAGsxsiNNrrbT");
         qqSsoHandler.addToSocialSDK();
     }
 

@@ -25,7 +25,7 @@ import org.mobiletrain.myapp.utils.HttpUtils;
  * Created by liusihui on 2015/12/8.
  */
 public class Text_detail_fragment extends Fragment{
-    private String detail_path = "http://api.shigeten.net/api/Novel/GetNovelContent?id=";
+    private String detail_path = HttpUtils.ARTICLE_DETATLS_URL;
     private String index;
     private ListView text_list;
     private List<Text_detail_info> parse_info;

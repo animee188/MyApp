@@ -29,7 +29,7 @@ import org.mobiletrain.myapp.utils.HttpUtils;
  */
 public class MoviesFragment extends Fragment {
     private List<Fragment> fragments;
-    private final String url = "http://api.shigeten.net/api/Critic/GetCriticList";
+    private String url = HttpUtils.MOVIE_URL;
     private List<Movie_news> list;
     private ViewPager movievp;
 

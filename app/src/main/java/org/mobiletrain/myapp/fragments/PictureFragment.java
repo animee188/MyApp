@@ -34,7 +34,7 @@ public class PictureFragment extends Fragment {
     private int dayCurrent;
     private int weekCurrent;
 
-    private String url = "http://api.shigeten.net/api/Diagram/GetDiagramList";
+    private String url = HttpUtils.PICTURE_URL;
     private TreeSet<Integer> set;
     private TreeSet<Integer> listPositionOffsetPixels;
 

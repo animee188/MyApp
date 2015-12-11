@@ -23,7 +23,7 @@ import org.mobiletrain.myapp.utils.HttpUtils;
  * A simple {@link Fragment} subclass.
  */
 public class TextFragment extends Fragment {
-    private String id_path = "http://api.shigeten.net/api/Novel/GetNovelList";                  //id的路径
+    private String id_path = HttpUtils.ARTICLE_URL;                  //id的路径
     private ViewPager text_viewPager;
     private List<Text_detail_fragment> data;
     private List<Text_id_info> parse_id;

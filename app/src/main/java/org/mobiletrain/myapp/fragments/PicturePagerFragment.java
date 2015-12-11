@@ -31,8 +31,8 @@ public class PicturePagerFragment extends Fragment {
     private TextView auther;
     private TextView summary;
     private TextView summary2;
-    private String urlDetetal="http://api.shigeten.net/api/Diagram/GetDiagramContent?id=";
-    private String imageUrl="http://api.shigeten.net/";
+    private String urlDetetal = HttpUtils.PICTURE_DETATLS_URL;
+    private String imageUrl = HttpUtils.PICTURE_DISPLAY_URL;
 
     private int width;
     private int height;

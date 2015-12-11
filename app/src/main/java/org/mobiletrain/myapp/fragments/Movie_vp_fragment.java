@@ -42,7 +42,7 @@ import org.mobiletrain.myapp.utils.MyImageLoader;
 public class Movie_vp_fragment extends Fragment {
     private ImageLoader imageLoader;
     private RequestQueue queue;
-    private final  String url = "http://api.shigeten.net/api/Critic/GetCriticContent?id=";
+    private final  String url = HttpUtils.MOVIE_DETATLS_URL;
     private List<Movie_list_news> list;
     private ListView lv;
     private int tag = 0;

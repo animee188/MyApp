@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <application
-        android:name="unite.UniteApplication"
+        android:name="org.mobiletrain.myapp.unite.UniteApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
@@ -29,7 +29,7 @@
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5647e0e3e0f55aabf300888b" >
+            android:value="566a30bee0f55ab32300a4a4" >
         </meta-data>
         <activity
             android:name="com.umeng.socialize.view.ShareActivity"
